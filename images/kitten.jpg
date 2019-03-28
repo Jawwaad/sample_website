@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <!-- Note: It is strongly recommended that you do NOT make large changes to this file. Changing DOM structure or classes may prevent
+         the page from functioning correctly. Especially important pieces have been marked as such with comments
+         and should not be changed for any reason. -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="referrer" content="never" />
+    <title localize="[tcp_error.httpMessage]">Network Error</title>
+
+
+
+
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        WARNING: DO NOT REMOVE!
+        THIS SECTION LOADS ALL PAGE FUNCTIONALITY
+        REMOVING THIS WILL PREVENT BLOCK PAGES FROM FUNCTIONING CORRECTLY
+        !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <!-- START --- DO NOT REMOVE --- START -->
+        <script type="text/javascript">
+            // evaluate these on the proxy and make them available as js vars...
+var hashedpw = "2D563C234AA3E4D911B8CC288D967FBD";
+var jumpto = " ";
+
+var coach_continue_url = " ";
+var application_name = "none";
+var application_action_name = "-";
+var response_categories = "Technology/Internet";
+var url_host = "cdn.learnenough.com";
+var url_address = "2606:4700:20::6819:a822";
+var url_port = "80";
+var client_address = "10.9.38.123";
+var category_review_url = "http://sitereview.bluecoat.com/sitereview.jsp?referrer=136&url=http://cdn.learnenough.com/kitten.jpg";
+var last_error = "";
+var x_cs_auth_form_action_url = "http://www.cfauth.com/?bcfru=aHR0cDovL2Nkbi5sZWFybmVub3VnaC5jb20va2l0dGVuLmpwZw==";
+var x_auth_challenge_string = "";
+var x_cs_auth_form_domain_field = "";
+var cs_username = "jacdutoi";
+var x_cs_auth_request_id = "";
+var x_auth_private_challenge_state = "";
+var sc_auth_status = "";
+var reason = "Request could not be handled";
+var method = "GET";
+var x_radius_splash_username = "";
+var x_radius_splash_session_id = "0";
+var x_rs_ocsp_error = "";
+var x_virus_id = "";
+var x_virus_details = "";
+var empty = "";
+var ssl_failure_reason = "";
+var server_connection_socket_errno = "Address family not supported by";
+var icap_error_details = "";
+var redirect_location = "";
+var exception_rationale = "";
+var exception_request_rationale = "";
+
+window.onload = function() {
+    var externalLinks = function() {
+        if (!document.getElementsByTagName) return;
+        var anchors = document.getElementsByTagName("a");
+        for (var i=0; i<anchors.length; i++) {
+            var anchor = anchors[i];
+            var rel = anchor.getAttribute("rel") || '';
+            if (anchor.getAttribute("href") && rel === "external") {
+                anchor.target = "_blank";
+            }
+            anchor.setAttribute("rel", rel + " noreferrer");
+        }
+    };
+    externalLinks();
+
+    if (errors.length != 0 ) {
+        var localize = function() {
+            var find = $("[localize]");
+
+            $(find).each(function(){
+                var transTxtKey;
+                var key=$(this).attr('localize').replace("[","").replace("]","");
+                var keys=key.split(/\./);
+
+                if (keys.length < 1) {
+                    return false;
+                }
+
+                var textObject = errors;
+                while(keys.length > 0 && textObject) {
+                    textObject = textObject[keys.shift()];
+                }
+                transTxtKey = textObject;
+
+                if(transTxtKey) {
+                    $(this).html(transTxtKey);
+                }
+            });
+
+        };
+        localize();
+    }
+
+// once localized, replace the non-runtime evaluated variables with live content.
+    var fixprxevals = function() {
+// todo: drive this from an array or tidy it up.
+        $("a#coach-continue-url").attr("href", coach_continue_url);
+        $("#application-name").text('\"' + application_name + '\"');
+        $("#application-action-name").text('\"' + application_action_name + '\"');
+        $("#response-categories").text('\"' + response_categories + '\"');
+        $("#url-host").text('\"' + url_host + '\"');
+        $("#url-address").text('\"' + url_address + '\"');
+        $("#url-port").text('\"' + url_port + '\"');
+        $("#client_address").text('\"' + client_address + '\"');
+        $("#category-review-url").html('<a href="' + category_review_url + '">http://sitereview.bluecoat.com</a>');
+        $("#last-error").text('\"' + last_error + '\"');
+        $("#x-cs-auth-form-action-url").text('\"' + x_cs_auth_form_action_url + '\"');
+        $("#x-auth-challenge-string").text('\"' + x_auth_challenge_string + '\"');
+        $("#x-cs-auth-form-domain-field").text('\"' + x_cs_auth_form_domain_field + '\"');
+        $("#cs-username").text('\"' + cs_username + '\"');
+        $("#x-cs-auth-request-id").text('\"' + x_cs_auth_request_id + '\"');
+        $("#x-auth-private-challenge-state").text('\"' + x_auth_private_challenge_state + '\"');
+        $("#sc-auth-status").text('\"' + sc_auth_status + '\"');
+        $("#reason").text('\"' + reason + '\"');
+        $("#method").text('\"' + method + '\"');
+        $("#x-radius-splash-username").text('\"' + x_radius_splash_username + '\"');
+        $("#x-radius-splash-session-id").text('\"' + x_radius_splash_session_id + '\"');
+        $("#x-rs-ocsp-error").text('\"' + x_rs_ocsp_error + '\"');
+        $("#x-virus-id").text('\"' + x_virus_id + '\"');
+        $("#x-virus-details").text('\"' + x_virus_details + '\"');
+//    $("#proxy-sg-private-challenge-state").attr("value", proxy-sg-private-challenge-state);
+//    $("#proxy-sg-request-id").attr("value", proxy_sg_request_id);
+        $("#cpUsername").attr("value", cs_username);
+        $("#ssl-failure-reason").text('\"' + ssl_failure_reason + '\"');
+        $("#server-connection-socket-errno").text('\"' + server_connection_socket_errno + '\"');
+        $("#icap-error-details").text('\"' + icap_error_details + '\"');
+        $("a#redirect-location").attr("href", redirect_location);
+        $("a#site-review").attr("href", "http://sitereview.bluecoat.com/index.jsp?referrer=bccloud&url=" + url_host);
+        $("#bcExceptionRationale").text(exception_request_rationale || exception_rationale || "N/A");
+    };
+    fixprxevals();
+
+    $("#pwinput").keypress(function(e) {
+        if(e.keyCode==13) { return false; }
+    });
+
+    $("#pwinput").focus();
+    $("#sesame").click(function() {
+        var supplied = $("#pwinput").attr("value");
+        var hashed = $.md5(supplied).toUpperCase();
+        if(supplied) {
+            valpw(hashed); return false;
+        } else {
+            $("#errorNotify").show("fast");
+            var trans = errors["validations"].password_override.notSupplied;
+            $("#errorNotify").html("<div localize='[validations.password_override.notSupplied]'>" + trans + "</div>");
+            $("#pwinput").addClass("error");
+            return false;
+        }
+    });
+
+    var detailsShowing = false;
+    $('.detFlip').click(function() {
+        if(!detailsShowing){
+            $("#detMore").hide();
+            $("#detLess").show();
+            $("#additionalInfo").show('fast');
+        } else {
+            $("#detMore").show();
+            $("#detLess").hide();
+            $("#additionalInfo").hide('fast');
+        }
+        detailsShowing = !detailsShowing;
+    });
+    $("#pwinput").click(function() {
+        $("#errorNotify").hide("fast");
+        $("#pwinput").removeClass("error");
+        this.value = "";
+    });
+
+    var goTo = function(url) {
+        var a = document.createElement("a");
+        if(!a.click) {
+            window.location=url;
+            return;
+        }
+        a.setAttribute("href", url);
+        a.style.display = "block";
+        $("body").append(a);
+        a.click();
+    };
+
+    function valpw(hashed) {
+        if(hashed==hashedpw) {
+            goTo(jumpto);
+        } else {
+            $("#errorNotify").show("fast");
+            var trans = errors.validations.password_override.incorrectPassword;
+            $("#errorNotify").html("<div localize='[validations.password_override.incorrectPassword]'>" + trans + "</div>");
+            $("#pwinput").addClass("error");
+            return false;
+        }
+    }
+
+    if($('#contactNameValue').text() === '') $('#contactName').hide();
+    if($('#contactPhoneValue').text() === '') $('#contactPhone').hide();
+    if($('#contactEmailValue').text() === '') $('#contactEmail').hide();
+
+    if (String.prototype.trim && ["unlicensed", "unavailable", "none", "invalid"].indexOf($("#addClientGeolocation .additional").text().trim().toLowerCase()) !== -1) {
+        $("#addClientGeolocation").hide();
+    }
+};
+
+document.writeln('<script type="text/javascript" src="//portal.threatpulse.com/ex/5.0/js/jquery-1.5.min.js"><\/script>');
+document.writeln('<script type="text/javascript" src="//notify.bluecoat.com/ex/5.0/js/lang/exceptions.js"><\/script>');
+document.writeln('<script type="text/javascript" src="//portal.threatpulse.com/ex/5.0/js/jquery.md5.min.js"><\/script>');
+
+        </script>
+    <!-- END --- DO NOT REMOVE --- END -->
+
+
+
+
+    <!-- This loads default Symantec styling -->
+   	<style type="text/css">
+       #logo a {
+    background-image: url("//portal.threatpulse.com/brandlogo?cid=ab6217d657e4a754858da975f25cdcec&lfn=errorlogo.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+    </style>
+    <!-- This will load the default Symantec error page styling, as configured in the Symantec portal -->
+    <link rel="stylesheet" type="text/css" href="//portal.threatpulse.com/ex/5.0/css/style0104.css" />
+    <!-- This will load the Symantec favicon -->
+    <link rel="shortcut icon" href="//portal.threatpulse.com/ex/5.0/img/favicon.ico" />
+</head>
+
+<body class="bodydrop">
+<div id="outer">
+    <div id="container" class="int curved">
+        <div id="branding">
+            <div class="curved" id="logo">
+                <a rel="external" title="Symantec" href="http://www.symantec.com/">Symantec</a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="bodyCopy">
+                <div id="exceptionDetails" class="int">
+                    <h1 id="doctitle" localize="[tcp_error.httpMessage]">Network Error</h1>
+
+
+
+
+                    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                         WARNING: DO NOT REMOVE!
+                         THIS SECTION IS USED TO INJECT KEY PAGE FUNCTIONALITY INCLUDING:
+                           - EXCEPTION DETAILS (DESCRIPTION)
+                           - INPUT TEXT FIELD FOR PASSWORD OVERRIDE
+                           - MESSAGE AND PROCEED BUTTON FOR COACHING
+                         REMOVING THIS WILL PREVENT BLOCK PAGES FROM WORKING
+                         !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+                    <!-- START --- DO NOT REMOVE --- START -->
+                        <div id="message">
+                            <div localize="[tcp_error.message]">
+                                Your request could not be completed. <p>The URL you requested at cdn.learnenough.com, could not be reached by the network. The site's server may be down or experiencing a high level of traffic.<span class="displayNone">&#160;</span>
+                            </div>
+                        </div>
+                    <!-- END --- DO NOT REMOVE --- END -->
+
+
+
+
+                    <div id="help">
+                        <div localize="[tcp_error.help]">
+                            The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time.<span class="displayNone">&#160;</span>
+                        </div>
+                    </div>
+                    <p id="httpCode"><span localize="[techSupport]">Tech support information</span>: tcp_error
+                        <a class="detFlip" href="javascript:void(0);"><span id="detMore" localize="[more]">more</span></a>
+                        <a class="detFlip" href="javascript:void(0);"><span id="detLess" localize="[less]">less</span></a>
+                    </p>
+
+                    <p>
+                        <span localize="[contact]">For assistance, contact your network support team.</span>
+                    </p>
+
+                    <p id="contactName">
+                        <span localize="[name]">Name</span><span>:&#160;</span><span id="contactNameValue">Enterprise Service Desk</span>
+                    </p>
+
+                    <p id="contactPhone">
+                        <span localize="[phone]">Phone</span><span>:&#160;</span><span id="contactPhoneValue"></span>
+                    </p>
+
+                    <p id="contactEmail">
+                        <span localize="[email]">Email</span><span>:&#160;</span><span id="contactEmailValue"></span>
+                    </p>
+                </div>
+                <div id="additionalInfo" class="int curved">
+                    <ul>
+                        <li id="addIP"><span localize="[clientIP]">Client IP:</span> <span class="additional">10.9.38.123
+                            <span class="displayNone">&#160;</span></span></li>
+                        <li id="addUserName"><span localize="[username]">Username:</span> <span class="additional">MHGZA\jacdutoi
+                            <span class="displayNone">&#160;</span></span></li>
+                        <li id="addURL"><span localize="[URL]">URL:</span> <span class="additional">http://cdn.learnenough.com/kitten.jpg
+                            <span class="displayNone">&#160;</span></span></li>
+                        <li id="addUserAgent"><span localize="[userAgent]">User Agent:</span>
+                            <span class="additional">curl/7.35.0
+                                <span class="displayNone">&#160;</span>
+                            </span>
+                        </li>
+                        <li id="addGeolocation"><span>Client Geolocation:</span>
+                            <span class="additional">Unavailable
+                                <span class="displayNone">&#160;</span>
+                            </span>
+                        </li>
+                        <li id="addErrorId"><span>Error ID:</span>
+                            <span class="additional"><span id='bcExceptionRationale'></span>
+                                <span class="displayNone">&#160;</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="copyright">&#169; 2019 MMI Holdings Ltd</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
